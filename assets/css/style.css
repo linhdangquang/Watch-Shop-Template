@@ -681,7 +681,7 @@ button {
 
 .subscribe__form button {
   position: absolute;
-  right: 5rem;
+  right: 18%;
   padding: 1rem;
   background-color: var(--body-color);
   transition: var(--img-transition);
@@ -862,9 +862,6 @@ input {
 }
 
 /* sub info container */
-.more__info-container {
-
-}
 
 .more__info-content {
   display: flex;
@@ -957,6 +954,11 @@ input {
 .comment__user-avatar {
   width: 35px;
   height: 35px;
+}
+
+.comment__user-avatar img {
+  width: fit-content;
+  height:100%;
 }
 
 .comment__user-name {
@@ -1471,4 +1473,195 @@ input {
   transform: translateX(-0.75rem);
   white-space: nowrap;
   width: 150px;
+}
+
+/* about container */
+.description__container {
+  margin: 0 auto;
+}
+
+.description__container-title .sidebar-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.is-divider-description__container {
+  margin: 0 auto;
+  max-width: 50px;
+}
+
+.description__container-banner {
+  background-image: url(../img/slide3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1200px;
+  min-height: 310px;
+  background-color: #000;
+  margin: 1rem auto;
+}
+
+.description___container-content {
+  border-bottom: 1px #acacac solid ;
+  margin-bottom: 1rem;
+}
+
+.description___container-content p {
+  padding: 1rem 0;
+}
+
+.description__container-companysize {
+  padding-bottom: 2rem ;
+  text-align: center;
+}
+
+.description__container-companysize_content {
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+
+.description__container-companysize_title {
+  padding: 1rem 0;
+}
+
+.description__container-companysize_content--text {
+  margin-right: 2rem;
+  padding: .5rem .25rem;
+  background-color: #ddd;
+}
+
+.description__container-companysize_content--text p {
+  padding: .2rem 0;
+
+}
+
+.description__container-companysize_content--text p i {
+  vertical-align: middle;
+}
+
+.description__container-companysize_content--img {
+  width: 50%;
+}
+
+
+.description__container-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.description__container-item_avatar {
+  max-width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.description__container-item_avatar img {
+  border-radius: 99%;
+  width: 90%;
+  margin-right: 25px;
+}
+
+.description__container-item-info {
+  border-bottom: rgb(216, 214, 214) 1px solid;
+}
+
+.description__container-item-info h3 {
+  margin-bottom: var(--mb-1);
+}
+
+.description__container-item-info p {
+  margin-bottom: var(--mb-0-5);
+}
+
+.description__container-item-info p i {
+  color: #23adad;
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+/* CONTACT PAGE */
+
+.contact__container-title {
+  display: block;
+}
+
+.contact__container-title .sidebar-title {
+  display: block;
+  text-align: left;
+}
+
+.contact__container-title small {
+  
+  font-size: var(--small-font-size);
+}
+
+.contact__content {
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+}
+
+.contact__form {
+  width: 35%;
+}
+
+.contact__form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem 0;
+}
+
+.contact__form form input,textarea {
+  border: 1px solid #ddd;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: var(--normal-font-size);
+}
+
+.contact__form form textarea {
+  padding: 1rem ;
+}
+
+.contact__form form textarea::placeholder {
+  font-family: var(--body-font);
+}
+
+.contact__form form textarea:focus {
+  outline: none;
+}
+
+.contact__form form button {
+  padding: 1rem;
+  width: 100%;
+  border-radius: 2px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--black-color);
+  transition: all .2s ;
+}
+
+.contact__form form button:hover {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+.contact__form form button:active {
+  transform: scale(.98);
+}
+
+.contact__address {
+  flex: 1 0;
+  margin-left: 5%;
 }
