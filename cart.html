@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <head>
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- FAVICON -->
@@ -24,10 +21,8 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
         <!-- ranger slider -->
         <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
-        <title>Giới thiệu</title>
-    </head>
+        <title>Giỏ hàng</title>
 </head>
-
 <body>
     <header class="header header__product" id="header">
         <nav class="nav container">
@@ -36,7 +31,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#" class="nav__link">giới thiệu</a></li>
-                    <li class="nav__item"><a href="/category.html" class="nav__link">đồng hồ nam</a></li>
+                    <li class="nav__item"><a href="./category.html" class="nav__link">đồng hồ nam</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">đồng hồ nữ</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">đồng hồ đôi</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">phụ kiện</a></li>
@@ -98,91 +93,77 @@
             </div>
         </nav>
     </header>
-    <div class="main main_category">
-        <nav class="breadcrumbs_category">
-            <a href="index.html">Trang chủ</a>
-            <span class="divider_category">/</span>
-            Giới thiệu
-        </nav>
-
-        <div class="description__container">
-            <div class="description__container-title">
-                <span class="sidebar-title">về chúng tôi</span>
-                        <div class="is-divider small is-divider-description__container "></div>
-            </div>
-
-            <div class="description__container-banner">
-            </div>
-
-            <div class="description___container-content">
-                <p>Được thành vào những ngày cuối cùng của năm 2020, Đồng Hồ LHK đã tồn tại và phát triển đến ngày nay và đang dần vươn lên trở thành 1 trong những chuỗi bán lẻ đồng hồ hàng nhỏ ở Việt Nam.
-
-                    Cùng với tiêu chí luôn đề cao những giá trị cao nhất cho khách hàng, Hải Triều không chỉ mang đến những phiên bản đồng hồ chính hãng với chất lượng tốt nhất, mà còn mang lại sự an tâm, tin cậy dành cho Quý khách hàng.
-                    
-                    Ông Điều Minh Hám – CEO của Đồng Hồ LHK tâm sự: “Chúng tôi không kinh doanh đồng hồ đơn thuần mà chúng tôi chia sẻ niềm đam mê và sáng tạo”. Đồng Hồ LHK sẽ là cầu nối của cộng đồng yêu thích đồng hồ – nơi mà có thể mọi thành viên có thể kết nối, gắn kết cùng 1 tình yêu – đó là đồng hồ.</p>
-            </div>
-
-            <div class="description__container-companysize">
-                <div class="description__container-companysize_title">
-                    <span class="sidebar-title">Quy mô cửa hàng</span>
-                            <div class="is-divider small is-divider-description__container "></div>
+    <main class="main">
+        <section class="section cart">
+            <h1 style="margin-bottom: 1rem;">Giỏ hàng</h1>
+            
+            <div class="shopping-cart">
+                
+                   <button class="remove-product remove-all">
+                            <a style="color: white;" href="./src/cart/cart_delete_all.php">Xóa giỏ hàng</a>
+                        </button>"
+               
+    
+                <div class="column-labels">
+                    <label class="product-image">Image</label>
+                    <label class="product-details">Product</label>
+                    <label class="product-price">Giá</label>
+                    <label class="product-quantity">Số lượng</label>
+                    <label class="product-removal">Remove</label>
+                    <label class="product-line-price">Tổng</label>
                 </div>
-                <div class="description__container-companysize_content">
-                    <div class="description__container-companysize_content--text">
-                        <p><i class="ri-arrow-right-s-fill"></i> Số lượng showroom đang hoạt động: 1 cửa hàng</p>
-                        <p><i class="ri-arrow-right-s-fill"></i> Diện tích mỗi showroom: 10 – 15 mét vuông</p>
-                        <p><i class="ri-arrow-right-s-fill"></i> Sản phẩm kinh doanh: đồng hồ đeo tay nam nữ, phụ kiện đồng hồ đeo tay, dịch vụ đồng hồ đeo tay</p>
-                        <p><i class="ri-arrow-right-s-fill"></i> Số  lượng sản phẩm: 150-170 chiếc đồng hồ (Ít nhất VN)</p>
-                        <p><i class="ri-arrow-right-s-fill"></i> Nhân viên chính thức: 220-250 người</p>
-                        <p><i class="ri-arrow-right-s-fill"></i> 25 thương hiệu nổi tiếng thế giới</p>
-                        <p><i class="ri-arrow-right-s-fill"></i> Phạm vi hoạt động: tất cả các tỉnh thành tại Việt Nam</p>
-                        <p><i class="ri-arrow-right-s-fill"></i> Kênh hoạt động: cửa hàng truyền thống và thương mại điện tử</p>
+    
+                
+    
+                <div class="product">
+                    <div class="product-image">
+                    <img src="./assets/img/dong-ho-casio-ga-100de-2adr-nu-pin-day-nhua.png">
                     </div>
-                    <div class="description__container-companysize_content--img">
-                        <img src="./assets/img/slide1.jpg" alt="">
+                    <div class="product-details">
+                    <div class="product-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quos.</div>
+                    <p class="product-description">Lorem ipsum dolor sit amet.</p>
                     </div>
+                    <div class="product-price">lorem</div>
+                    <div class="product-quantity">
+                        99
+                    </div>
+                    <div class="product-removal">
+                    <button class="remove-product">
+                        <a style="color: white;" href="./src/cart/cart_item_delete.php?id=<?php echo $product['id']; ?>">Xoá</a>
+                    </button>
+                    </div>
+                    <div class="product-line-price">9999</div>
                 </div>
-
-            </div>
-
-            <div class="description__container-member">
-                <div class="description__container-item">
-                    <div class="description__container-item_avatar">
-                        <img src="./assets/img/profile.png" alt="avatar">
+    
+    
+            
+    
+                <div class="totals">
+                    <div class="totals-item">
+                    <label>Ước tính</label>
+                    <div class="totals-value" id="cart-subtotal">99999</div>
                     </div>
-                    <div class="description__container-item-info">
-                        <h3>CEO – ĐIỀU MINH HÁM</h3>
-                        <p><i class="ri-check-line"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aut voluptate suscipit deleniti accusamus aliquam omnis, eligendi, nulla, voluptatem accusantium dicta ipsa. Nisi aliquid illum vero molestiae dicta assumenda repudiandae.</p>
-                        <p><i class="ri-check-line"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aut voluptate suscipit deleniti accusamus aliquam omnis, eligendi, nulla, voluptatem accusantium dicta ipsa. Nisi aliquid illum vero molestiae dicta assumenda repudiandae.</p>
-                        <p><i class="ri-check-line"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aut voluptate suscipit deleniti accusamus aliquam omnis, eligendi, nulla, voluptatem accusantium dicta ipsa. Nisi aliquid illum vero molestiae dicta assumenda repudiandae.</p>
+                    <div class="totals-item">
+                    <label>Thuế (0%)</label>
+                    <div class="totals-value" id="cart-tax">0</div>
                     </div>
+                    <div class="totals-item">
+                    <label>Shipping</label>
+                    <div style="text-align: right;" id="cart-shipping">Miễn phí</div>
+                    </div>
+                    <div class="totals-item totals-item-total">
+                    <label>Tổng cộng</label>
+                    <div class="totals-value" id="cart-total">
+                        <!-- <a  href="./src/admin/auth/login_form.php" class="checkout">Đăng nhập để thanh toán</a> -->
+                  
+    
+                        <a  href="./checkout.php" class="checkout">Thanh toán</a>";
+                    <a  href="./index.php" class="back-checkout checkout">Quay lại</a>
+                        
                 </div>
-                <div class="description__container-item">
-                    <div class="description__container-item_avatar">
-                        <img src="./assets/img/profile.png" alt="avatar">
-                    </div>
-                    <div class="description__container-item-info">
-                        <h3>GIÁM ĐỐC – ĐIỀU MINH HÁM</h3>
-                        <p><i class="ri-check-line"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aut voluptate suscipit deleniti accusamus aliquam omnis, eligendi, nulla, voluptatem accusantium dicta ipsa. Nisi aliquid illum vero molestiae dicta assumenda repudiandae.</p>
-                        <p><i class="ri-check-line"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aut voluptate suscipit deleniti accusamus aliquam omnis, eligendi, nulla, voluptatem accusantium dicta ipsa. Nisi aliquid illum vero molestiae dicta assumenda repudiandae.</p>
-                        <p><i class="ri-check-line"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aut voluptate suscipit deleniti accusamus aliquam omnis, eligendi, nulla, voluptatem accusantium dicta ipsa. Nisi aliquid illum vero molestiae dicta assumenda repudiandae.</p>
-                    </div>
-                </div>
-                <div class="description__container-item">
-                    <div class="description__container-item_avatar">
-                        <img src="./assets/img/profile.png" alt="avatar">
-                    </div>
-                    <div class="description__container-item-info">
-                        <h3>CMO – ĐIỀU MINH HÁM</h3>
-                        <p><i class="ri-check-line"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aut voluptate suscipit deleniti accusamus aliquam omnis, eligendi, nulla, voluptatem accusantium dicta ipsa. Nisi aliquid illum vero molestiae dicta assumenda repudiandae.</p>
-                        <p><i class="ri-check-line"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aut voluptate suscipit deleniti accusamus aliquam omnis, eligendi, nulla, voluptatem accusantium dicta ipsa. Nisi aliquid illum vero molestiae dicta assumenda repudiandae.</p>
-                        <p><i class="ri-check-line"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aut voluptate suscipit deleniti accusamus aliquam omnis, eligendi, nulla, voluptatem accusantium dicta ipsa. Nisi aliquid illum vero molestiae dicta assumenda repudiandae.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </div>
+            </div> 
+        </section>
+    </main>
     <footer class="footer section">
 
         <div class="footer__container container">
@@ -294,5 +275,4 @@
         });
     </script>
 </body>
-
 </html>
