@@ -23,7 +23,7 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
         <!-- ranger slider -->
         <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
-        <title>Thanh toán</title>
+        <title>Chi tiết thanh toán</title>
     </head>
 </head>
 
@@ -103,71 +103,57 @@
         <div class="description__container contact__container">
             <div class="contact__form-container">
 
-                <div class="contact__content payment-content" style="justify-content: center; padding-top: 50px;">
-                    <div class="contact__form" style="width:40%;border-top: 2px solid #ddd;">
-                        <div class="description__container-title contact__container-title">
-                            <small class="sidebar-title" style="margin-bottom: 0;font-size: 20px;">THÔNG TIN THANH
-                                TOÁN</small>
-                        </div>
-                        <form action="./order-received.html" style="gap:.5rem">
-                            <label for="" style="color: black;">Họ và tên *</label>
-                            <input type="text" required style="padding-top:.5rem; padding-bottom: .5rem">
-                            <label for="" style="color: black;">Địa chỉ *</label>
-                            <input type="text" required style="padding-top:.5rem; padding-bottom: .5rem">
-                            <label for="" style="color: black;">Số điện thoại *</label>
-                            <input type="text" required style="padding-top:.5rem; padding-bottom: .5rem">
-                            <label for="" style="color: black;">Email *</label>
-                            <input type="email" required style="padding-top:.5rem; padding-bottom: .5rem">
-                            <label for="" style="color: black;">Hình thức thanh toán *</label>
+                <div class="contact__content payment-content order-content" style="justify-content: center; padding-top: 50px;">
+                    
 
-                            <div>
-                                <input type="radio" name="pay_method" id="">
-                                <label for="" style="color: black;"> Trả tiền mặt khi nhận hàng</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="pay_method" id="">
-                                <label for="" style="color: black;"> Chuyển khoản ngân hàng</label>
-                            </div>
-                            <label for="" style="color: black;">Ghi chú đơn hàng *</label>
-                            <textarea name="" id="" cols="15" rows="7" placeholder="Tin nhắn ..."
-                                style="padding-top:.5rem; padding-bottom: .5rem"></textarea>
-                            <button class="payment-btn" type="submit">Đặt hàng</button>
-                        </form>
-                    </div>
-
-                    <div class="contact__address payment-details"
-                        style="width:40%; flex: none; border: 2px solid #44596F; padding: 0.5rem; padding-bottom: 1rem;">
-                        <small class="sidebar-title" style="margin-bottom: 0;font-size: 20px;">ĐƠN HÀNG CỦA BẠN</small>
+                    <div class="contact__address payment-details order-details" 
+                        style="width:30%;">
+                        <small class="sidebar-title" style="margin-bottom: 0;font-size: 20px;">CHI TIẾT ĐƠN HÀNG</small>
                         <div class="is-divider small " style="margin: .25rem 0; max-width: 100%;"></div>
                         <div>
                             <table style="text-align:left; width: 100%; color: black;">
                                 <thead>
-                                    <th width="60%" style="font-size: 18px;">Sản phẩm</th>
-                                    <th width="30%" style="font-size: 18px;">Tổng</th>
+                                    <th  style="font-size: 18px;">Sản phẩm</th>
+                                    <th  style="font-size: 18px; text-align: right;">Tổng</th>
 
                                 </thead>
 
-                                <tr style="font-size: 14px;">
+                                <tr style="font-size: 13px;">
 
-                                    <td style="border-top: 1px solid #ddd; padding: .5rem 0;">Lorem ipsum dolor, s</td>
-                                    <td style="border-top: 1px solid #ddd; padding: .5rem 0;">99999999999 đ</td>
+                                    <td style="border-top: 1px solid #ddd; padding: .5rem 0;"><strong>Lorem ipsum dolor, s</strong></td>
+                                    <td style="border-top: 1px solid #ddd; padding: .5rem 0; text-align: right; font-size: 16px;"><strong>99999999999 đ</strong></td>
                                 </tr>
 
-                                <tr style="font-size: 14px;">
-                                    <td style="border-top: 1px solid #ddd; padding: .5rem 0;">Ước tính</td>
-                                    <td style="border-top: 1px solid #ddd; padding: .5rem 0;">99999999999 đ</td>
+                                <tr style="font-size: 13px;">
+                                    <td style="border-top: 1px solid #ddd; padding: .5rem 0;"><strong>Ước tính</strong></td>
+                                    <td style="border-top: 1px solid #ddd; padding: .5rem 0; text-align: right; font-size: 16px;"><strong>99999999999 đ</strong></td>
                                 </tr>
-                                <tr style="font-size: 14px;">
-                                    <td style="border-top: 1px solid #ddd; padding: .5rem 0;">Giao hàng</td>
-                                    <td style="border-top: 1px solid #ddd; padding: .5rem 0; color: #666;">Miễn phí</td>
+                                
+                                <tr style="font-size: 13px;">
+                                    <td style="border-top: 1px solid #ddd; padding: .5rem 0;"><strong>Phương thức thanh toán</strong></td>
+                                    <td style="border-top: 1px solid #ddd; padding: .5rem 0; color: #666; text-align: right; font-size: 16px;">Chuyển khoản ngân hàng</td>
                                 </tr>
-                                <tr style="font-size: 14px;">
-                                    <td style="border-top: 1px solid #ddd; padding: .5rem 0;">Tổng cộng</td>
-                                    <td style="border-top: 1px solid #ddd; padding: .5rem 0;">99999999999 đ</td>
+                                <tr style="font-size: 13px;">
+                                    <td style="border-top: 1px solid #ddd; padding: .5rem 0;"><strong> Giao hàng</strong></td>
+                                    <td style="border-top: 1px solid #ddd; padding: .5rem 0; color: #666; text-align: right; font-size: 16px;">Miễn phí</td>
+                                </tr>
+                                <tr style="font-size: 13px;">
+                                    <td style="border-top: 1px solid #ddd; padding: .5rem 0;"><strong>Tổng cộng</strong> </td>
+                                    <td style="border-top: 1px solid #ddd; padding: .5rem 0; text-align: right; font-size: 16px;"><strong>99999999999 đ</strong></td>
                                 </tr>
 
                             </table>
                         </div>
+                    </div>
+
+                    <div class="completed-order">
+                        <p>Cảm ơn bạn. Đơn hàng của bạn đã được nhận.</p>
+                        <ul>
+                            <li>Mã đơn hàng : <strong>autonumber</strong> </li>
+                            <li>Ngày : <strong>Lorem ipsum dolor sit amet.</strong></li>
+                            <li>Tổng cộng : <strong>Lorem ipsum dolor sit amet.</strong></li>
+                            <li>Phương thức thanh toán : <strong>Chuyển khoản ngân hàng</strong> <br> <small>Vui lòng chuyển khoản đến STK TPBANK 9999999 để chúng tôi xác nhận và gửi hàng cho quý khách.</small></li>
+                        </ul>
                     </div>
                 </div>
             </div>
