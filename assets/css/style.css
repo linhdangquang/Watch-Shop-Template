@@ -1881,6 +1881,83 @@ textarea {
 }
 
 /* PAYMENT PAGE */
+/* discount */
+.apply__discount {
+  padding: 1.5rem 6.5rem 0 6.5rem;
+}
+
+.apply__discount-text {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+.apply__discount-text .form-discount-toggle {
+  color: #333;
+  cursor: pointer;
+  transition: .3s all;
+}
+
+.apply__discount-text .form-discount-toggle:hover {
+  color: var(--text-color);
+  font-weight: var(--font-semi-bold);
+}
+
+.apply__discount-text p i {
+  vertical-align: middle;
+  font-size: 18px;
+  color: #9fa4a4;
+}
+
+.form-apply__discount {
+  border: 2px dashed #333;
+  padding: .5rem 1rem;
+  margin-top: .75rem;
+  display: none;
+}
+
+.form-apply__discount.active {
+  display: block;
+  animation: ease form-apply 1s;
+}
+
+@keyframes form-apply {
+  from { opacity:0;}
+  to { opacity:1; }
+}
+
+.form-apply__discount form {
+  display: flex;
+}
+
+.input-discount {
+  flex: 1;
+  border: 1px solid #ddd;
+}
+
+.input-discount input {
+  width: 100%;
+  padding: 0 .5rem;
+  height: 100%;
+}
+
+.input-discount input:focus {
+  -webkit-box-shadow: 0px 0px 7px 4px rgba(221,221,221,1);
+-moz-box-shadow: 0px 0px 7px 4px rgba(221,221,221,1);
+box-shadow: 0px 0px 7px 4px rgba(221,221,221,1);
+}
+
+.submit-discount button {
+  border-radius: 0;
+  width: 100%;
+  padding: 0 1rem;
+  background-color: var(--black-color);
+  color: #fff;
+  font-weight: var(--font-semi-bold);
+}
+
+
 .paymetn-content {
   position: relative;
 }
@@ -1992,4 +2069,11 @@ textarea {
 .news-content-writer--name h3 {
   padding-top:  1rem;
   font-size: 14px;
+}
+
+.product__price-sale {
+  opacity: .6;
+    font-weight: normal;
+    margin-right: 0.3em;
+    font-size: var(--small-font-size)
 }
