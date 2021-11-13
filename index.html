@@ -54,7 +54,7 @@
                         <div class="search__form" id="search">
                             <form class="search-fr" action="#">
                                 <div class="form-input">
-                                    <input name="q" id="search" placeholder="Tìm kiếm..." value="" type="text"
+                                    <input name="q" id="search" placeholder="Tìm kiếm..." value="" type="text" autocomplete="off"
                                         required="required" />
                                     <button type="submit">
                                         <i class="ri-search-eye-line"></i>
@@ -67,9 +67,9 @@
                                 title="Giỏ hàng"></i></a></li>
 
                     <!-- Nếu đăng nhập thành công hiện ảnh ng dùng  -->
-                    <li class="social__item"><a style="text-transform: none" href="./profile.php" class="social__icon "
+                    <li class="social__item"><a style="text-transform: none" href="./profile.html" class="social__icon "
                             id="Tài khoản" title="Tài khoản">
-                            <img src="./assets/img/profile.png" class=user-profile-image alt="avatar">
+                            <img src="./assets/img/no_image.png" class=user-profile-image alt="avatar">
                         </a>
                     </li>
 
@@ -518,6 +518,16 @@
         <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
         <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            function showPassw() {
+                var x = document.getElementById("password");
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                    x.type = "password";
+                }
+            }
+        </script>
         <script>
             var swiper = new Swiper(".mySwiper", {
                 autoplay: {
