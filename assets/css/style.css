@@ -1493,9 +1493,13 @@ input {
 }
 
 .profile__error {
+  color: crimson;
+  padding-bottom: 5px;
+}
+
+.form__error {
   padding-left: 16.5%;
   padding-right: 35%;
-  color: crimson;
   max-width: 785px;
 }
 
