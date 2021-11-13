@@ -9,9 +9,14 @@ window.addEventListener("scroll", scrollHeader);
 // FORM DISCOUNT
 const openFormDiscount = document.querySelector(".form-discount-toggle");
 const formApply = document.querySelector(".form-apply__discount");
-openFormDiscount.addEventListener("click", () => {
-  formApply.classList.toggle("active");
-});
+
+try {
+  openFormDiscount.addEventListener("click", () => {
+    formApply.classList.toggle("active");
+  });
+}catch (e) {
+  console.log("not discount active");
+}
 
 // TAB function
 function openCity(evt, containerName) {
@@ -27,4 +32,9 @@ function openCity(evt, containerName) {
   document.getElementById(containerName).style.display = "block";
   evt.currentTarget.className += " active";
 }
-document.getElementById("defaultOpen").click();
+
+try {
+  document.getElementById("defaultOpen").click();
+}catch {
+  console.log("payment page");
+}
