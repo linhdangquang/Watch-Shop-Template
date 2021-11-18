@@ -195,6 +195,9 @@
         height: 100px;
         background: none;
       }
+      .error {
+        color: crimson;
+      }
     </style>
   </head>
   <body>
@@ -225,6 +228,9 @@
                 <input type="text" placeholder="Email" />
                 <input type="password" placeholder="Mật khẩu" />
                 <input type="submit" value="Đăng nhập" />
+                <div>
+                  <p class="error">không được để trống</p>
+                </div>
                 <a href="./forgot-password-form.html">Quên mật khẩu</a> <br>
                 <a href="./index.html">Trang chủ</a>
 
@@ -252,6 +258,9 @@
                 <div class="register-item">
                   <input type="password" placeholder="Mật khẩu" />
                   <input type="password" placeholder="Xác nhận mật khẩu" />
+                </div>
+                <div>
+                  <p class="error">không được để trống</p>
                 </div>
                 <input type="submit" value="Đăng ký" />
 
