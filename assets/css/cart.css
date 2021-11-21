@@ -92,7 +92,7 @@
   .column-labels .product-image,
   .column-labels .product-details,
   .column-labels .product-removal {
-    text-indent: -9999px;
+    text-indent: 0px;
   }
   
   /* Product entries */

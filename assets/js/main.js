@@ -39,4 +39,17 @@ try {
   console.log("payment page");
 }
 
+// MENU BTN 
+
+const menuToggle = document.querySelector('#menu-hidden-btn')
+const menu = document.querySelector('.nav__menu')
+
+try {
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('nav__menu-block');
+  })
+}catch {
+  console.log("error");
+}
+
 
