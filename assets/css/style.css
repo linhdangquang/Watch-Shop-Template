@@ -1319,8 +1319,8 @@ input {
   align-items: flex-start;
   row-gap: 2rem;
   column-gap: 3rem;
-  transform: translateY(10%);
   height: fit-content;
+  margin-top: 4.5rem;
 }
 
 .products__container-content {
