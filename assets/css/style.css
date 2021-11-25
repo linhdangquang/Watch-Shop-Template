@@ -1414,7 +1414,7 @@ input {
 }
 
 .profile__avatar img {
-  width: 500px;
+  min-width: 500px;
   height: 100%;
   border-radius: 50%;
   opacity: 0.6;
@@ -1443,6 +1443,32 @@ input {
 .profile__avatar span {
   color: var(--white-color);
   bottom: 40%;
+}
+
+.upload-img-profile {
+  position: absolute;
+  bottom: 0;
+}
+
+.upload-img-profile label {
+  font-size: 28px;
+  cursor: pointer;
+  color: #fff;
+  opacity: 0.6;
+  position: relative;
+}
+
+.upload-img-profile label:hover {
+  opacity: 1;
+}
+
+.upload-img-profile label span {
+  font-size: 14px;
+  position: absolute;
+  bottom: 100%;
+  min-width: 200px;
+  right: -93px;
+  text-align: center;
 }
 
 .profile__form {

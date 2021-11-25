@@ -84,6 +84,7 @@
                         <a style="text-transform: none" href="./profile.php" class="social__icon" id="Tài khoản"
                             title="Tài khoản">
                             <img src="./assets/img/profile.png" class="user-profile-image" alt="avatar" />
+                            
                         </a>
                     </li>
 
@@ -123,16 +124,20 @@
         </nav>
 
         <section class="">
+            <form method="post" action="./src/admin/users/update_user.php">
             <h1>Hồ sơ Lorem ipsum dolor sit amet.</h1>
             <div class="profile__container">
                 <div class="profile__avatar">
                     <h2>Lorem3</h2>
                     <span class="small">username</span>
                     <img src="./assets/img/slide1.jpg" alt="avatar" />
+                    <div class="upload-img-profile">
+                        <input type="file" name="" id="img-profile" class="inputfile" style="display: none;">
+                        <label for="img-profile"><i class="ri-edit-box-line" title="Thay đổi ảnh"></i><span></span></label>
+                    </div>
                 </div>
 
                 <div class="profile__form">
-                    <form method="post" action="./src/admin/users/update_user.php">
                         <input type="hidden" name="profile" value="true" />
                         <input type="hidden" autocomplete="off" name="id" value="" />
                         <input type="hidden" autocomplete="off" name="ma_kh" value="" />
