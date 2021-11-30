@@ -7,7 +7,6 @@ for (let i = 0; i < menuItem.length; i++) {
   }
 
 }
-console.log(currentLocation);
 /*====================CHANGE BACKGROUND================*/
 function scrollHeader() {
   const header = document.getElementById("header");
@@ -24,9 +23,7 @@ try {
   openFormDiscount.addEventListener("click", () => {
     formApply.classList.toggle("active");
   });
-}catch (e) {
-  console.log("not discount active");
-}
+}catch {}
 
 // TAB function
 function openCity(evt, containerName) {
@@ -45,9 +42,7 @@ function openCity(evt, containerName) {
 
 try {
   document.getElementById("defaultOpen").click();
-}catch {
-  console.log("payment page");
-}
+}catch {}
 
 // MENU BTN 
 
@@ -58,9 +53,7 @@ try {
   menuToggle.addEventListener('click', () => {
     menu.classList.toggle('nav__menu-block');
   })
-}catch {
-  console.log("error");
-}
+}catch {}
 
 // INPUT IMG
 
