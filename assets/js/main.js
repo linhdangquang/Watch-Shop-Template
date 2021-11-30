@@ -1,3 +1,13 @@
+ // ACTIVE MENU BTN 
+const currentLocation = location.href
+const menuItem = document.querySelectorAll('.nav__link')
+for (let i = 0; i < menuItem.length; i++) {
+  if (menuItem[i].href === currentLocation) {
+    menuItem[i].classList.add('active')
+  }
+
+}
+console.log(currentLocation);
 /*====================CHANGE BACKGROUND================*/
 function scrollHeader() {
   const header = document.getElementById("header");
