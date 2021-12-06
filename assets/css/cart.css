@@ -216,7 +216,7 @@
     .product-details {
       float: none;
       margin-bottom: 10px;
-      width: auto;
+      width:60%;
     }
   
     .product-price {
@@ -237,10 +237,29 @@
   
     .product-removal {
       width: auto;
+      margin-left: auto;
+      float: right;
     }
   
     .product-line-price {
       float: right;
       width: 70px;
+      margin-right: 1rem;
     }
+    .section.cart {
+      padding: 2rem 0;
+      margin: 0 15px;
+    }
+    .shopping-cart {
+      width: 100%;
+    }
+    .product-quantity {
+      white-space: nowrap;
+      width: 15%;
+    }
+    .remove-all {
+      border-bottom: 2px solid #eee;
+      margin-bottom: 1rem;
+    }
+    
   }

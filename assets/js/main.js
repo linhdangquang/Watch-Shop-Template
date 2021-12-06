@@ -1,11 +1,10 @@
- // ACTIVE MENU BTN 
-const currentLocation = location.href
-const menuItem = document.querySelectorAll('.nav__link')
+// ACTIVE MENU BTN
+const currentLocation = location.href;
+const menuItem = document.querySelectorAll(".nav__link");
 for (let i = 0; i < menuItem.length; i++) {
   if (menuItem[i].href === currentLocation) {
-    menuItem[i].classList.add('active')
+    menuItem[i].classList.add("active");
   }
-
 }
 /*====================CHANGE BACKGROUND================*/
 function scrollHeader() {
@@ -23,7 +22,7 @@ try {
   openFormDiscount.addEventListener("click", () => {
     formApply.classList.toggle("active");
   });
-}catch {}
+} catch {}
 
 // TAB function
 function openCity(evt, containerName) {
@@ -42,40 +41,54 @@ function openCity(evt, containerName) {
 
 try {
   document.getElementById("defaultOpen").click();
-}catch {}
+} catch {}
 
-// MENU BTN 
+// MENU BTN
 
-const menuToggle = document.querySelector('#menu-hidden-btn')
-const menu = document.querySelector('.nav__menu')
+const menuToggle = document.querySelector("#menu-hidden-btn");
+const menu = document.querySelector(".nav__menu");
 
 try {
-  menuToggle.addEventListener('click', () => {
-    menu.classList.toggle('nav__menu-block');
-  })
-}catch {}
+  menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("nav__menu-block");
+  });
+} catch {}
+
+//
+const btnFilter = document.querySelector("#btn_filter");
+const sideBarFilter = document.querySelector(".shop-sidebar-menu");
+
+try {
+  document.addEventListener("click", (e) => {
+    let target = e.target;
+    do {
+      if (target == btnFilter) {
+        sideBarFilter.classList.toggle("active");
+        return;
+      }
+      target = target.parentNode;
+    } while (target);
+    sideBarFilter.classList.remove("active");
+  });
+} catch {}
 
 // INPUT IMG
 
-let inputs = document.querySelectorAll( '.inputfile' );
-Array.prototype.forEach.call( inputs, function( input )
-{
-	var label	 = input.nextElementSibling,
-		labelVal = label.innerHTML;
+let inputs = document.querySelectorAll(".inputfile");
+Array.prototype.forEach.call(inputs, function (input) {
+  var label = input.nextElementSibling,
+    labelVal = label.innerHTML;
 
-	input.addEventListener( 'change', function( e )
-	{
-		var fileName = '';
-		if( this.files && this.files.length > 1 )
-			fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
-		else
-			fileName = e.target.value.split( '\\' ).pop();
+  input.addEventListener("change", function (e) {
+    var fileName = "";
+    if (this.files && this.files.length > 1)
+      fileName = (this.getAttribute("data-multiple-caption") || "").replace(
+        "{count}",
+        this.files.length
+      );
+    else fileName = e.target.value.split("\\").pop();
 
-		if( fileName )
-			label.querySelector( 'span' ).innerHTML = fileName;
-		else
-			label.innerHTML = labelVal;
-	});
+    if (fileName) label.querySelector("span").innerHTML = fileName;
+    else label.innerHTML = labelVal;
+  });
 });
-
-

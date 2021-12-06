@@ -9,10 +9,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- FAVICON -->
         <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-    <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico">
-    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+        <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico">
+        <link rel="manifest" href="./assets/favicon/site.webmanifest">
         <!-- RECAPCHA -->
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <!-- css -->
@@ -32,7 +32,8 @@
 <body>
     <header class="header header__product" id="header">
         <nav class="nav container">
-            <a href="./index.html" class="nav__logo nav__link"><img class="nav__logo-img" src="./assets/img/logo_hkl.png" alt="logo"></a>
+            <a href="./index.html" class="nav__logo nav__link"><img class="nav__logo-img"
+                    src="./assets/img/logo_hkl.png" alt="logo"></a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -91,8 +92,13 @@
                     <li class="social__item"><a style="text-transform: none" href="./src/admin/auth/register_form.php"
                             class="social__icon"><i class="ri-user-add-line" title="Đăng ký"></i>Đăng ký</a></li>
 
+
+
                     <li class="social__item" id="dash"><a href="./src/admin/dashboard/dash.php" title="Quản trị"
                             class="social__icon"><i class="ri-settings-2-line"></i></a></li>
+                    <li class="social__item" id="menu-hidden-btn"><a style="cursor: pointer;" title="Thêm"
+                            class="social__icon"><i class="ri-align-justify"></i></a></li>
+
 
 
                 </ul>
@@ -107,7 +113,10 @@
         </nav>
         <span class="total-product">Tất cả ... kết quả
         </span>
-
+        <div class="btn-filter">
+            <a id="btn_filter" style="cursor: pointer;" title="Thêm" class="social__icon"><i
+                    class="ri-align-justify"></i> LỌC</a>
+        </div>
         <section class="section product_category">
             <!-- Pagination -->
             <div class="pagination__container">
@@ -124,6 +133,7 @@
                     <li class="page__btn"><a><i class="ri-arrow-right-s-line"></i></a></li>
                 </ul>
             </div>
+
             <div class="shop-sidebar-menu">
                 <div class="shop-sidebar-container category-list">
                     <span class="sidebar-title">danh mục sản phẩm</span>
@@ -159,10 +169,10 @@
                                 <input type="hidden" id="amount1">
                                 <input type="hidden" id="amount2">
                                 <div class="slider__context">
-                                    <input type="submit" name="submit_range" value="Lọc">
+                                    <input type="button" name="submit_range" value="Lọc">
                                     <label for="amount" class="amount-ranger-label">
                                         <p>Giá:</p>
-                                        <p id="amount"></p>
+                                        <p id="amount" class="amount-ranger"></p>
                                     </label>
                                 </div>
                             </form>
@@ -252,7 +262,8 @@
                         Giá tiền &#8363
                     </div>
                     <div class="product__view">
-                        <i class="ri-eye-fill"></i> <p>999 lượt xem</p>    
+                        <i class="ri-eye-fill"></i>
+                        <p>999 lượt xem</p>
                     </div>
                     <!-- if sold out -->
                     <div class="sold_out">Hết hàng</div>
@@ -450,13 +461,13 @@
                 max: 21940000,
                 values: [1677000, 21940000],
                 slide: function (event, ui) {
-                    $("#amount").html(ui.values[0] + "đ  -" + ui.values[1] + "đ");
+                    $("#amount").html(ui.values[0].toLocaleString('vi', { style: 'currency', currency: 'VND' }) + "-" + ui.values[1].toLocaleString('vi', { style: 'currency', currency: 'VND' }));
                     $("#amount1").val(ui.values[0]);
                     $("#amount2").val(ui.values[1]);
                 }
             });
-            $("#amount").html($("#slider-range").slider("values", 0) +
-                "đ  - " + $("#slider-range").slider("values", 1) + "đ");
+            $("#amount").html($("#slider-range").slider("values", 0).toLocaleString('vi', { style: 'currency', currency: 'VND' }) +
+                " - " + $("#slider-range").slider("values", 1).toLocaleString('vi', { style: 'currency', currency: 'VND' }));
         });
     </script>
     <!-- Back to top JavaScript-->
